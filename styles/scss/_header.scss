@@ -1,0 +1,37 @@
+header{
+    background-image: url(./assets/20200316_185428.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-text{
+    text-align: center;
+}
+
+.hero-text h3{
+    color: #ffaac5;
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 8rem;
+    color: #fadfc6;
+    text-transform: uppercase;
+    margin: 0;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+}
+
+//-------------------------------header glow animation-----------------------------------------//
+@-webkit-keyframes glow{
+  from {
+    text-shadow: 0 0 10px rgb(199, 33, 111), 0 0 20px rgb(238, 39, 65), 0 0 30px #ee0b7c, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(241, 150, 150), 0 0 30px #f77272, 0 0 40px #ff4db5, 0 0 50px #f10bb8, 0 0 60px #cd4dff, 0 0 70px #c74dff, 0 0 80px #e14dff;
+  }
+}
