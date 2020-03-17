@@ -247,6 +247,7 @@ html {
   color: #eebac9;
   background: #0c080b;
   font-size: 62.5%;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -276,14 +277,39 @@ h3 {
 }
 
 header {
+  pointer-events: none;
   background-image: url(./assets/20200316_185428.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
+.dimmed {
+  position: relative;
+}
+
+.dimmed:after {
+  content: " ";
+  background: rgba(38, 18, 126, 0.25);
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 200px;
+  z-index: 1;
+}
+
 .hero-text {
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-text h3 {
@@ -298,6 +324,21 @@ h1 {
   margin: 0;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.social-nav {
+  font-size: 3rem;
+  padding: 0;
+}
+
+.social-nav li {
+  margin: 20px 0;
+  pointer-events: auto;
+}
+
+.social-nav li a {
+  color: #ffaac5;
+  z-index: 2;
 }
 
 @-webkit-keyframes glow {
