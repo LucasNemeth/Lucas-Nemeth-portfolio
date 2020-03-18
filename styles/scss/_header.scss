@@ -4,7 +4,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    
+    background-attachment: fixed;
 }
 
 .dimmed{
@@ -36,8 +36,11 @@ header{
     text-align: center;
     margin: 0 auto;
     h3{
-        color: #ffaac5;
-        font-size: 3rem;
+        color: #fadfc6;
+        font-size: 4rem;
+        -webkit-text-stroke: 1px #ffffff;
+        text-shadow:3px 3px 4px  rgb(241, 150, 150);
+        margin-top: 0;
     }
 }
 
@@ -55,16 +58,28 @@ h1 {
 }
 
 .social-nav{
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding:0;
     
     li{
         margin:20px 0;
         pointer-events: auto;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
         a{
-            color:#ffaac5;
+            color:#aafff4;
             z-index: 2;
+            
+            
             
         }
     }
+}
+
+.social-nav li:hover {
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    transform: scale(1.5);
 }

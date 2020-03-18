@@ -17,6 +17,7 @@ html{
 .wrapper{
     max-width: 1040px;
     margin: 0 auto;
+    width:75%;
 }
 
 li{
@@ -25,4 +26,12 @@ li{
 
 li a{
     color: #8c0881;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
