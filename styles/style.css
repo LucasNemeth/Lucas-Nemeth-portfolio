@@ -351,10 +351,11 @@ h1 {
 .social-nav {
   font-size: 3.5rem;
   padding: 0;
+  margin-top: 0;
 }
 
 .social-nav li {
-  margin: 20px 0;
+  margin: 40px 0;
   pointer-events: auto;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -363,6 +364,10 @@ h1 {
 .social-nav li a {
   color: #aafff4;
   z-index: 2;
+}
+
+.social-nav li:first-of-type {
+  margin-top: 0;
 }
 
 .social-nav li:hover {
@@ -396,8 +401,13 @@ h1 {
   width: 80%;
 }
 
+.about-me {
+  background: rgba(128, 0, 128, 0.404);
+}
+
 .about-me .wrapper h2 {
-  margin-left: 300px;
+  margin-left: 50%;
+  padding-top: 20px;
 }
 
 @-webkit-keyframes glow {
