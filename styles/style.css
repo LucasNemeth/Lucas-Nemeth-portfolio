@@ -344,6 +344,7 @@ h1 {
   color: #fadfc6;
   text-transform: uppercase;
   margin: 0;
+  -webkit-text-stroke: 1px #ffffff;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -385,6 +386,7 @@ h1 {
 
 .about-img-contain {
   width: 20%;
+  margin-bottom: 20px;
 }
 
 .about-img-contain img {
@@ -397,17 +399,42 @@ h1 {
 }
 
 .about-text-contain {
-  padding-left: 40px;
   width: 80%;
+  padding-right: 20px;
 }
 
 .about-me {
-  background: rgba(128, 0, 128, 0.404);
+  background: rgba(128, 0, 128, 0.171);
+  margin: 40px;
+  border: 4px solid hotpink;
+  border-radius: 50px;
 }
 
 .about-me .wrapper h2 {
-  margin-left: 50%;
   padding-top: 20px;
+  margin: 0;
+}
+
+.skill-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+
+.skill-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-list li i {
+  font-size: 4rem;
 }
 
 @-webkit-keyframes glow {

@@ -51,6 +51,7 @@ h1 {
     color: #fadfc6;
     text-transform: uppercase;
     margin: 0;
+    -webkit-text-stroke: 1px #ffffff;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
