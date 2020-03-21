@@ -76,7 +76,7 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #ff2193;
 }
 
 #menu-toggle input:checked ~ span:nth-last-child(3)
@@ -94,7 +94,7 @@
 #menu
 {
     position: absolute;
-    width: 1040px;
+    width: 1270px;
     margin: -100px 0 0 -50px;
 
     background: #ff2193;
@@ -117,4 +117,12 @@
 #menu-toggle input:checked ~ ul
 {
   transform: none;
+}
+
+.top-nav{
+    padding-top:20px;
+}
+
+#menu a{
+    margin: 0 20px;
 }

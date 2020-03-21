@@ -14,35 +14,38 @@
 </head>
 <body>
     <header class="dimmed">
+        <div class="top-nav">
+            <nav role="navigation">
+                <div id="menu-toggle">  <!--shoutouts to Erik Terwin's codepen-->
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>About Me</li>
+                        </a>
+                        <a href="#">
+                            <li>Skills</li>
+                        </a>
+                        <a href="#">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact Me</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="wrapper">
             <section class="heading">
-                <div class="top-nav">
-                    <nav role="navigation">
-                        <div id="menu-toggle">  <!--shoutouts to Erik Terwin's codepen-->
-                            <input type="checkbox" />
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <ul id="menu">
-                                <a href="#">
-                                    <li>Home</li>
-                                </a>
-                                <a href="#">
-                                    <li>About Me</li>
-                                </a>
-                                <a href="#">
-                                    <li>Skills</li>
-                                </a>
-                                <a href="#">
-                                    <li>Portfolio</li>
-                                </a>
-                                <a href="#">
-                                    <li>Contact Me</li>
-                                </a>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                
+                
+                
                 <div class="hero-text">
                     <h1>Lucas Nemeth</h1>
                     <h3>Web Developer</h3>
@@ -62,44 +65,120 @@
         </div>
     </header>
     <main>
-        <section class="about-me" id="about-me">
-            <div class="wrapper">
-                <h2>About Me</h2>
-                <div class="about-box">
-                    <div class="about-text-contain">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, natus ab perspiciatis aliquid soluta, vero veniam perferendis nam accusamus voluptatem tenetur voluptas consectetur ex optio enim saepe quae repellendus magni cum minus! Similique cupiditate omnis fugit aperiam minima nihil qui odio, aspernatur porro dignissimos minus doloribus eaque eos amet est iusto excepturi quae a! Nemo iste ipsam blanditiis distinctio unde. Veritatis magni dicta incidunt temporibus et necessitatibus, ducimus vel nobis voluptate modi provident, veniam reiciendis nisi exercitationem vero voluptatem repudiandae.</p>
-                    </div>
-                    <div class="about-img-contain">
-                        <img src="./styles/assets/Lucas-Nemeth.jpg" alt="Lucas Nemeth">
+        <section class="main-container">
+            <section class="about-me" id="about-me">
+                <div class="wrapper">
+                    <h2>About Me</h2>
+                    <div class="about-box">
+                        <div class="about-text-contain">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, natus ab perspiciatis aliquid soluta, vero veniam perferendis nam accusamus voluptatem tenetur voluptas consectetur ex optio enim saepe quae repellendus magni cum minus! Similique cupiditate omnis fugit aperiam minima nihil qui odio, aspernatur porro dignissimos minus doloribus eaque eos amet est iusto excepturi quae a! Nemo iste ipsam blanditiis distinctio unde. Veritatis magni dicta incidunt temporibus et necessitatibus, ducimus vel nobis voluptate modi provident, veniam reiciendis nisi exercitationem vero voluptatem repudiandae.</p>
+                        </div>
+                        <div class="about-img-contain">
+                            <img src="./styles/assets/Lucas-Nemeth.jpg" alt="Lucas Nemeth">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <div class="wrapper">
-                <div class="skills-contain">
-                    <h2>My Skills</h2>
-                    <ul class="skill-list">
-                        <li><i class="fab fa-html5"></i>HTML5</li>
-                        <li><i class="fab fa-css3-alt"></i>CSS3</li>
-                        <li><i class="fab fa-sass"></i>Sass</li>
-                        <li><i class="fab fa-js-square"></i>JavaScript</li>
-                        <li><i class="devicon-jquery-plain"></i>JQuery</li>
-                        <li><i class="fab fa-react"></i>React</li>
-                        <li><i class="fab fa-github"></i>Github</li>
-                        <li><i class="fab fa-git-alt"></i>Git</li>
-                    </ul>
+            </section>
+            <section class="skills" id="skills">
+                <div class="wrapper">
+                    <div class="skills-contain">
+                        <h2>My Skills</h2>
+                        <ul class="skill-list">
+                            <li><i class="fab fa-html5"></i>HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i>CSS3</li>
+                            <li><i class="fab fa-sass"></i>Sass</li>
+                            <li><i class="fab fa-js-square"></i>JavaScript</li>
+                            <li><i class="devicon-jquery-plain"></i>JQuery</li>
+                            <li><i class="fab fa-react"></i>React</li>
+                            <li><i class="fab fa-github"></i>Github</li>
+                            <li><i class="fab fa-git-alt"></i>Git</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="portfolio" id="portfolio">
-            <div class="wrapper">
-                <h3>Some of My Stuff</h3>
-                <div class="right-container">
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="wrapper">
+                    <h2>Some of My Stuff</h2>
+                    <div class="left-container">
+                        <div class="port-contain-left">
+                            <h3>Does This Person Exist</h3>
+                            <p>A JQuery based quiz using pictures from an AI portrait generator (<a href="https://www.thispersondoesnotexist.com/"> here </a>) and pictures of real people where the user has to guess whether they are real or fake.</p>
+                            <ul class="built-with">
+                                <li>HTML5</li>
+                                <li>SCSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="port-img-contain-left">
+                            <img src="" alt="Does this person exist? app">
+                            <a href=""><button>github</button></a>
+                            <a href=""><button>live</button></a>
+                        </div>
+                    </div>
 
+
+                    <div class="right-container">
+                        <div class="port-img-contain-right">
+                            <img src="" alt="Owlbears and Goblins app">
+                            <a href=""><button>github</button></a>
+                            <a href=""><button>live</button></a>
+                        </div>
+                        <div class="port-contain-right">
+                            <h3>Owlbears and Goblins: Battle Arena</h3>
+                            <p>A paired programming project using the Dungeons and Dragons API to grab the stats of each playable monster, where you can choose one and duke it out in a one on one battle with an opposing creature.
+                            </p>
+                            <ul class="built-with">
+                                <li>HTML5</li>
+                                <li>SCSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="left-container">
+                        <div class="port-contain-left">
+                            <h3>Adventure Base</h3>
+                            <p>A React based project using Firebase. An app for tabletop gaming, for people to log in and keep track of their latest quests and statuses.</p>
+                            <ul class="built-with">
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>JSX</li>
+                                <li>SCSS</li>
+                            </ul>
+                        </div>
+                        <div class="port-img-contain-left">
+                            <img src="" alt="Adventure Base app">
+                            <a href=""><button>github</button></a>
+                            <a href=""><button>live</button></a>
+                        </div>
+                    </div>
+
+
+                    <div class="right-container">
+                        <div class="port-img-contain-right">
+                            <img src="" alt="TV Party app">
+                            <a href=""><button>github</button></a>
+                            <a href=""><button>live</button></a>
+                        </div>
+                        <div class="port-contain-right">
+                            <h3>TV Party</h3>
+                            <p>An agency type project using React and Firebase to search for a list of tv shows in the tvmaze API using any superlative keyword to describe a show. You can then add any of those shows into your own personalized list. </p>
+                            <ul class="built-with">
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>SCSS</li>
+                                <li>JSX</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
+        
+        
     </main>
     <footer>
         <section class="contact" id="contact">
