@@ -1,0 +1,31 @@
+.social-nav{
+    font-size: 2rem;
+    padding:0;
+    margin-top:0;
+    display: flex;
+    
+    li{
+        pointer-events: auto;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+
+        a{
+            color:#aafff4;
+            z-index: 2;
+            
+            
+            
+        }
+    }
+}
+// .social-nav li:first-of-type{
+//     margin-top: 0;
+// }
+
+.social-nav li:hover {
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    transform: scale(1.5);
+}
