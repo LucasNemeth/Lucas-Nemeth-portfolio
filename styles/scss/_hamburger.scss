@@ -3,12 +3,14 @@
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;
+  left: 33px;
   
   z-index: 2;
   
   -webkit-user-select: none;
   user-select: none;
+
+  max-width: 90vw;
 }
 
 #menu-toggle a
@@ -94,7 +96,7 @@
 #menu
 {
     position: absolute;
-    width: 1270px;
+    width: 100vw;
     margin: -100px 0 0 -50px;
 
     background: #ff2193;
