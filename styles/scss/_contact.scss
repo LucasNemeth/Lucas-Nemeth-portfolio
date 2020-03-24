@@ -12,13 +12,32 @@
 
         a{
             color:#aafff4;
-            z-index: 2;
-            
-            
-            
+            z-index: 2;   
         }
     }
 }
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    .email-entry{
+        width: 100%;
+        font-size: 0px;
+        .entry{
+            width: 50%;
+            white-space: nowrap;
+            font-size: 1.2rem;
+        }
+    }
+}
+form input {
+    vertical-align:middle;
+    height:35px; 
+}
+textarea{
+    font-size: 1.2rem;
+}
+
 // .social-nav li:first-of-type{
 //     margin-top: 0;
 // }

@@ -20,7 +20,7 @@
 .glitch:after{
   content:attr(data-text);
   position:absolute;
-  left:-2px;
+  left:-1px;
   text-shadow:-1px 0 red;
   top:0;
   color:white;
