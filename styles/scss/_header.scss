@@ -41,6 +41,9 @@ header{
         -webkit-text-stroke: 1px #ffffff;
         text-shadow:3px 3px 4px  rgb(241, 150, 150);
         margin-top: 0;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
     }
 }
 

@@ -3,6 +3,7 @@
     padding:0;
     margin-top:0;
     display: flex;
+    justify-content: space-around;
     
     li{
         pointer-events: auto;
@@ -38,6 +39,13 @@ textarea{
     font-size: 1.2rem;
 }
 
+h3{
+    font-size: 2rem;
+}
+
+.social-contain{
+    text-align: center;
+}
 // .social-nav li:first-of-type{
 //     margin-top: 0;
 // }
