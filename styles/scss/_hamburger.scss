@@ -49,6 +49,7 @@
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
+    margin-left: 20px;
     position: relative;
     
     background: #cdcdcd;
@@ -99,13 +100,14 @@
     width: 100vw;
     margin: -100px 0 0 -50px;
 
-    background: #ff2193;
+    background: #ff2194d3;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     display: flex;
+
 }
 
 #menu li
@@ -123,6 +125,8 @@
 
 .top-nav{
     padding-top:20px;
+    position: fixed;
+    z-index: 2;
 }
 
 #menu a{
