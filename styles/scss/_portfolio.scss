@@ -15,29 +15,42 @@
     border-image:radial-gradient(40deg,  rgb(0, 0, 0)48%, rgb(48, 6, 46) 97%);
 }
 
+.right-container:last-of-type{
+    border: none;
+}
+
 .built-with{
     display: flex;
+    font-size: 1.2rem;
+    padding:0;
+}
+
+.port-contain-left,
+.port-contain-right{
+    margin-top:20px;
 }
 
 .port-contain-right h3,
 .port-contain-left h3{
     font-size: 2rem;
+    color: #ff2193;
 }
 
 .port-img-contain-mobile {
     width:40%;
+    min-width: 120px;
 }
-// .port-contain-left :first-of-type{
+// .port-contain-mobile:first-of-type{
 //     width: 60%;
 // }
 
 .port-buttons{
     display:flex;
-    justify-content: center;
     // flex-direction: column;
     button {
         width:100px;
         margin:5px;
+        margin-left: 0;
         text-transform: uppercase;
         border-radius: 50px;
     }
