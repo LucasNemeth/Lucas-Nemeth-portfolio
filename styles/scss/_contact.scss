@@ -56,3 +56,13 @@ h3{
     animation: neon 1.5s ease-in-out infinite alternate;
     transform: scale(1.5);
 }
+
+.foot{
+    text-align: center;
+    margin:0;
+    background: linear-gradient(40deg, #a50354 48%, #ff2194ec 97%);
+    color: #fadfc6;
+    p{
+        margin: 0;
+    }
+}

@@ -10,6 +10,9 @@
 .left-container,
 .right-container{
     display: flex;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-image:radial-gradient(40deg,  rgb(0, 0, 0)48%, rgb(48, 6, 46) 97%);
 }
 
 .built-with{
