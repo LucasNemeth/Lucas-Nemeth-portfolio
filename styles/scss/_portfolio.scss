@@ -2,8 +2,32 @@
 // .right-container {
 //     display:flex;
 // }
+.left-container,
+.right-container{
+    display: flex;
+}
+
+.built-with{
+    display: flex;
+}
 
 .port-contain-right h3,
 .port-contain-left h3{
     font-size: 2rem;
+}
+
+.port-img-contain-mobile {
+    width:40%;
+}
+// .port-contain-left :first-of-type{
+//     width: 60%;
+// }
+
+.port-buttons{
+    display:flex;
+    flex-direction: column;
+    button {
+        width:100%;
+        margin-bottom: 5px;
+    }
 }
