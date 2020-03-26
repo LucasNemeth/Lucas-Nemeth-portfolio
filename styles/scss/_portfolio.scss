@@ -2,6 +2,11 @@
 // .right-container {
 //     display:flex;
 // }
+.portfolio{
+    background:linear-gradient(40deg, rgb(48, 6, 46) 48%, rgb(0, 0, 0) 97%);
+    margin: 20px;
+}
+
 .left-container,
 .right-container{
     display: flex;
@@ -25,9 +30,12 @@
 
 .port-buttons{
     display:flex;
-    flex-direction: column;
+    justify-content: center;
+    // flex-direction: column;
     button {
-        width:100%;
-        margin-bottom: 5px;
+        width:100px;
+        margin:5px;
+        text-transform: uppercase;
+        border-radius: 50px;
     }
 }

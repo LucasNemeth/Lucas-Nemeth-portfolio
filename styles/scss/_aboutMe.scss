@@ -22,11 +22,27 @@
 }
 
 .about-me{
-
+    background: #22022c;
+    background:linear-gradient(40deg, rgb(48, 6, 46) 48%, rgb(0, 0, 0) 97%);
+    margin: 20px;
+    // border-radius: 50px;
+    // border:10px solid ;
+    // border: linear-gradient(40deg, rgba(27,1,19,1) 48%, rgba(129,41,137,1) 97%);
+    
     .wrapper{
+        
         h2 {
             padding-top:20px;
             margin:0;
         }
     }
+}
+.border-wrap {
+
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #09000e71, rgba(247, 6, 247, 0.418));
+  padding: 3px;
+  margin:20px;
+//   border-radius: 50px;
 }
