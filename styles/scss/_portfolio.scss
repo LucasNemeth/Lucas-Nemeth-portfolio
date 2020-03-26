@@ -31,7 +31,8 @@
 }
 
 .port-contain-right h3,
-.port-contain-left h3{
+.port-contain-left h3,
+.port-contain-mobile h3{
     font-size: 2rem;
     color: #ff2193;
 }
@@ -46,6 +47,7 @@
 
 .port-buttons{
     display:flex;
+    margin-bottom: 20px;
     // flex-direction: column;
     button {
         width:100px;
