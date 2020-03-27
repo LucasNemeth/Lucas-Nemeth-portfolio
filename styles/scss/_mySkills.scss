@@ -16,3 +16,20 @@
     background:linear-gradient(40deg, rgb(0, 0, 0) 30%, rgb(48, 6, 46) 97%);
     margin:20px;
 }
+
+
+@media(max-width:655px){
+    .skill-list{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+@media(max-width:580px){
+    .skill-list{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media(max-width:445px){
+    .skill-list{
+        grid-template-columns: 50% 50%;
+    }
+}

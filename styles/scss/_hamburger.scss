@@ -132,3 +132,18 @@
 #menu a{
     margin: 0 20px;
 }
+
+@media(max-width:655px){
+  #menu li{
+    font-size: 1.7rem;
+  }
+  #menu  a{
+    margin: 0 15px;
+  }
+}
+
+@media(max-width:510px){
+  #menu li{
+    font-size: 1.5rem;
+  }
+}
