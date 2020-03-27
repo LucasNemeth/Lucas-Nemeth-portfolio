@@ -57,3 +57,37 @@
         border-radius: 50px;
     }
 }
+
+@media(max-width:800px){
+    .left-container,
+    .right-container{
+        flex-direction: column;
+    }
+    .port-contain-mobile{
+        order:2;
+    }
+    .port-img-contain-mobile{
+        width:100%;
+        text-align: center;
+        order:1;
+        img{
+            max-width: 200px;
+        }
+    }
+    .port-contain-right{
+        margin: 0;
+    }
+    .port-img-contain-right{
+        text-align: center;
+        img{
+            max-width: 400px;
+        }
+    }
+    .port-contain-left{
+        order:2;
+        margin:0;
+    }
+    .port-img-contain-left{
+        order:1;
+    }
+}

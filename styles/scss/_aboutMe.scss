@@ -37,3 +37,22 @@
         }
     }
 }
+
+
+
+@media (max-width:800px){
+    .about-box{
+        display: grid;
+    }
+    .about-text-contain{
+        width:100%;
+        padding:0;
+    }
+    .about-img-contain{
+        text-align: center;
+        width: 100%;
+        img{
+            max-width:300px;
+        }
+    }
+}
