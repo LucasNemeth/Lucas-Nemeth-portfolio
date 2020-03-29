@@ -6,10 +6,11 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background-color: #fc59ad;
     box-shadow: 1px 1px  #ff2193;
     color: white;
 }
 
-button:
+

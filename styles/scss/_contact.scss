@@ -50,10 +50,13 @@ h3{
 //     margin-top: 0;
 // }
 
-.social-nav li:hover {
+.social-nav li:hover{
     -webkit-animation: neon 1.5s ease-in-out infinite alternate;
     -moz-animation: neon 1.5s ease-in-out infinite alternate;
     animation: neon 1.5s ease-in-out infinite alternate;
+    transform: scale(1.5);
+}
+.social-nav li:focus {
     transform: scale(1.5);
 }
 
