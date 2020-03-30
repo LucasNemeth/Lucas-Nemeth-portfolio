@@ -22,19 +22,19 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <a href="#">
+                        <a href="#" >
                             <li>Home</li>
                         </a>
-                        <a href=#about-me>
+                        <a href=#about-me >
                             <li>About Me</li>
                         </a>
-                        <a href=#skills>
+                        <a href=#skills > 
                             <li>Skills</li>
                         </a>
                         <a href=#portfolio>
                             <li>Portfolio</li>
                         </a>
-                        <a href=#contact>
+                        <a href=#contact >
                             <li>Contact Me</li>
                         </a>
                     </ul>
@@ -222,4 +222,13 @@
 </body>
 <script src="./script.js"></script>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script>
+    $('.menu-toggle').on('click', function () {
+            $('.menu').addClass('open');
+        });
+
+        $('.menu li').on("click", function () {
+            $('.menu').removeClass('open');
+        });
+</script>
 </html>
