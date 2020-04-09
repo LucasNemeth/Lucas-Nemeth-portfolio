@@ -11,6 +11,8 @@
         animation: glow 1s ease-in-out infinite alternate;
         box-shadow: 0px 0px 40px #ff069f77;
         transition: all 0.5s;
+        z-index: -2;
+        // border-radius: 500px;
     }
 
 }
@@ -25,6 +27,7 @@
     background: #22022c;
     background:linear-gradient(40deg, rgb(48, 6, 46) 48%, rgb(0, 0, 0) 97%);
     margin: 20px;
+    
     // border-radius: 50px;
     // border:10px solid ;
     // border: linear-gradient(40deg, rgba(27,1,19,1) 48%, rgba(129,41,137,1) 97%);
@@ -34,6 +37,9 @@
         h2 {
 
             margin:0;
+        }
+        p{
+            z-index: 2;
         }
     }
 }

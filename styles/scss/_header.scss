@@ -29,7 +29,53 @@ header{
 .heading {
     display: flex;
     z-index: 1;
+    position: relative;
+    flex-direction: column;
+    .arrow{
+
+        // text-align: center;
+        // padding-top:20px;
+        position: absolute;
+        left: 50%;
+        bottom: -100px;
+        transform: translate(-50%, -50%);
+        i{
+            font-size: 6rem;
+        }
+    }
 }
+#more-arrows {
+	width: 75px;
+    height: 65px;
+  
+    &:hover {
+        polygon {
+            fill: #ffffff;
+            transition: all .2s ease-out;
+            &.arrow-bottom {
+                transform: translateY(-18px);
+            }
+            &.arrow-top {
+                transform: translateY(18px);
+            }  
+        }
+    }
+
+}
+polygon {
+    fill: #ff2193;
+    transition: all .2s ease-out;
+        
+    &.arrow-middle {
+        opacity: 0.75;
+        }
+
+        &.arrow-top {
+        opacity: 0.5
+        }
+	 
+}
+
 
 .hero-text{
     text-align: center;
@@ -39,7 +85,7 @@ header{
         color: #fadfc6;
         font-size: 4rem;
         -webkit-text-stroke: 1px #ffffff;
-        text-shadow:3px 3px 4px  rgb(241, 150, 150);
+        text-shadow:3px 3px 4px  #f19696;
         margin-top: 0;
         -webkit-animation: glow 1s ease-in-out infinite alternate;
         -moz-animation: glow 1s ease-in-out infinite alternate;

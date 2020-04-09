@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/0b04240629.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -50,7 +51,15 @@
                     <h1 class="glitch" data-text="Lucas Nemeth">Lucas Nemeth</h1>
                     <h3>Web Developer</h3>
                 </div>
-
+                <div class="arrow" >
+                    <a href=#about-me >
+                        <svg id="more-arrows">
+                            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+                            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+                            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+                        </svg>
+                    </a>
+                </div>
                 
 
             </section>
@@ -61,13 +70,14 @@
         <div class="border-wrap">
             <section class="about-me" id="about-me">
                 <div class="wrapper">
-                    <h2>About Me</h2>
+                    <h2>Hey There, I'm Lucas...</h2>
                     <div class="about-box">
                         <div class="about-text-contain">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, natus ab perspiciatis aliquid soluta, vero veniam perferendis nam accusamus voluptatem tenetur voluptas consectetur ex optio enim saepe quae repellendus magni cum minus! Similique cupiditate omnis fugit aperiam minima nihil qui odio, aspernatur porro dignissimos minus doloribus eaque eos amet est iusto excepturi quae a! Nemo iste ipsam blanditiis distinctio unde. Veritatis magni dicta incidunt temporibus et necessitatibus, ducimus vel nobis voluptate modi provident, veniam reiciendis nisi exercitationem vero voluptatem repudiandae.</p>
+                            <p>I'm a creatively minded front end developer with a huge passion for creation. I love to build and having an illustration background, it gives me an edge design and making projects that can be eye catching as well as engaging. I've also had much experience within the customer service and technical support fields, which helped me gain many problem solving skills and a love for troubleshooting; it's kind of like solving puzzles!</p>
+                            <p>I make sure to work to make my websites responsive and accesible to ensure a quality user experience. Outside of coding, you would find me drawing up a storm, and writing up stories to go with them. </p>
                         </div>
                         <div class="about-img-contain">
-                            <img src="./styles/assets/Lucas-Nemeth.jpg" alt="Lucas Nemeth">
+                            <img src="./styles/assets/Optimized-MVIMG_20200327_213448.jpg" alt="Lucas Nemeth">
                         </div>
                     </div>
                 </div>
@@ -98,7 +108,7 @@
             <section class="portfolio" id="portfolio">
                 <div class="wrapper">
                     <h2>Some of My Stuff</h2>
-                    <div class="left-container">
+                    <div class="left-container" data-aos="fade-right">
                         <div class="port-contain-mobile">
                             <h3>Does This Person Exist</h3>
                             <p>A JQuery based quiz using pictures from an AI portrait generator (<a href="https://www.thispersondoesnotexist.com/"> here </a>) and pictures of real people where the user has to guess whether they are real or fake.</p>
@@ -119,7 +129,7 @@
                     </div>
 
 
-                    <div class="right-container">
+                    <div class="right-container" data-aos="fade-left">
                         <div class="port-img-contain-right">
                             <img src="./styles/assets/project4.png" alt="Owlbears and Goblins app">
                         </div>
@@ -141,7 +151,7 @@
                     </div>
 
 
-                    <div class="left-container">
+                    <div class="left-container" data-aos="fade-right">
                         <div class="port-contain-left">
                             <h3>Adventure Base</h3>
                             <p>A React based project using Firebase. An app for tabletop gaming, for people to log in and keep track of their latest quests and statuses.</p>
@@ -162,22 +172,21 @@
                     </div>
 
 
-                    <div class="right-container">
+                    <div class="right-container" data-aos="fade-left">
                         <div class="port-img-contain-right">
-                            <img src="./styles/assets/project6.png" alt="TV Party app">                            
+                            <img src="./styles/assets/project2.png" alt="Sophie Web Page">                            
                         </div>
                         <div class="port-contain-right">
-                            <h3>TV Party</h3>
-                            <p>An agency type project using React and Firebase to search for a list of tv shows in the tvmaze API using any superlative keyword to describe a show. You can then add any of those shows into your own personalized list. </p>
+                            <h3>It's all About Sophie</h3>
+                            <p>A multi-page website recreated from a png mockup using HTML and SCSS</p>
                             <ul class="built-with">
-                                <li>/React/</li>
-                                <li>/Firebase/</li>
+                                <li>/HTML5/</li>
+                                <li>/CSS3/</li>
                                 <li>/Sass/</li>
-                                <li>/JSX/</li>
                             </ul>
                             <div class="port-buttons">
-                                <a href="https://github.com/tv-show-superlatives/tv-show-superlatives"><button>github</button></a>
-                                <a href="https://tv-show-superlatives.github.io/tv-show-superlatives/"><button>live</button></a>
+                                <a href="https://github.com/LucasNemeth/Lucas-Nemeth-Project-Two"><button>github</button></a>
+                                <a href="https://lucasnemeth.github.io/Lucas-Nemeth-Project-Two/"><button>live</button></a>
                             </div>
                         </div>
                     </div>
@@ -193,16 +202,21 @@
             <div class="wrapper">
                 <h2>Contact Me</h2>
                 <div class="contact-forms">
-                    <form action="mailto:l.orion.n@gmail.com" class="submit">
+                    <form action="https://formspree.io/mvobanyd" 
+                        method="POST" class="submit">
                         <div class="email-entry"> 
-                            <input type="text" placeholder="Name" class="entry">
-                            <input type="text" placeholder="Email" class="entry">
+                            <input type="text" 
+                            name="name"
+                            placeholder="Name" class="entry">
+                            <input type="text" 
+                            name="_replyto"
+                            placeholder="Email" class="entry">
                         </div>
                         <textarea placeholder="Message" rows="5"></textarea>
                         <button type="submit" href="l.orion.n@gmail.com">
                             Send Email
                         </button>
-                    </form>
+                    </form>                                  
                 </div>
                 <nav class="social-contain">
                     <h3>Or Reach out to me Through Here</h3>
@@ -220,8 +234,12 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./script.js"></script>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script>
+    AOS.init();
+</script>
 <script>
     $('.menu-toggle').on('click', function () {
             $('.menu').addClass('open');
