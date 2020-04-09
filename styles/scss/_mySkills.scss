@@ -6,10 +6,17 @@
         display: flex;
         flex-direction: column;
         margin:20px;
+        transition: all 0.2s;
         i{
             font-size:4rem;
+            
         }
+        
     }
+}
+.skill-list li:hover{
+    transform: scale(1.2) ;
+    color: #ff2193;
 }
 
 .skills{
