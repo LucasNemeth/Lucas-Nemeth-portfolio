@@ -110,7 +110,8 @@
             <section class="portfolio" id="portfolio">
                 <div class="wrapper">
                     <h2>Some of My Stuff</h2>
-                    <div class="left-container" data-aos="fade-right">
+                    <div class="left-container" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                         <div class="port-contain-mobile">
                             <h3>Does This Person Exist</h3>
                             <p>A JQuery based quiz using pictures from an AI portrait generator (<a href="https://www.thispersondoesnotexist.com/"> here </a>) and pictures of real people where the user has to guess whether they are real or fake.</p>
@@ -131,7 +132,8 @@
                     </div>
 
 
-                    <div class="right-container" data-aos="fade-left">
+                    <div class="right-container" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                         <div class="port-img-contain-right">
                             <img src="./styles/assets/project4.png" alt="Owlbears and Goblins app">
                         </div>
@@ -153,7 +155,8 @@
                     </div>
 
 
-                    <div class="left-container" data-aos="fade-right">
+                    <div class="left-container" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                         <div class="port-contain-left">
                             <h3>Adventure Base</h3>
                             <p>A React based project using Firebase. An app for tabletop gaming, for people to log in and keep track of their latest quests and statuses.</p>
@@ -174,7 +177,8 @@
                     </div>
 
 
-                    <div class="right-container" data-aos="fade-left">
+                    <div class="right-container" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                         <div class="port-img-contain-right">
                             <img src="./styles/assets/project2.png" alt="Sophie Web Page">                            
                         </div>
@@ -250,5 +254,18 @@
         $('.menu li').on("click", function () {
             $('.menu').removeClass('open');
         });
+
+    noSlide = (maxWidth) => {
+            if (maxWidth.matches) {
+                ('data-aos')===null;
+                $('.left-container').removeData('data-aos');
+                $('.right-container').removeClass('data-aos');
+            }
+        }
+
+    const maxWidth = window.matchMedia("(max-width:410px)")
+    noSlide(maxWidth)
+    maxWidth.addListener(noSlide)
 </script>
+
 </html>
