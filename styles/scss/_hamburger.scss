@@ -97,7 +97,15 @@
     left: 40px;
     font-size: 2.5rem;
     visibility: hidden;
-    color:#fcfcfc;
+    color:#F8188F;
+}
+.hamburger i:hover,
+.hamburger i:active{
+    color: #f5dee8e7;
+}
+
+.hamburger i:hover{
+  cursor: pointer;
 }
 
 
@@ -107,7 +115,7 @@
     width: 100vw;
     // margin: -100px 0 0 -50px;
     margin: 0;
-    background: #1a0218;
+    background: linear-gradient(to top, #460546e7, #09000e);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -115,6 +123,8 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     display: flex;
     transition: all 0.5s ease-in;
+    justify-content: space-evenly;
+    padding: 0;
 
     
 
