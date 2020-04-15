@@ -1,110 +1,119 @@
-#menu-toggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 33px;
+// #menu-toggle
+// {
+//   display: block;
+//   position: relative;
+//   top: 50px;
+//   left: 33px;
   
-  z-index: 2;
+//   z-index: 2;
   
-  -webkit-user-select: none;
-  user-select: none;
+//   -webkit-user-select: none;
+//   user-select: none;
 
-  max-width: 90vw;
-}
-
-
-
-#menu-toggle a
-{
-  text-decoration: none;
-  color: #ffffff;
-  font-family: 'Exo 2', sans-serif;
-  transition: color 0.3s ease;
-}
+//   max-width: 90vw;
+// }
 
 
-#menu-toggle input
-{
-    display: block;
-    width: 40px;
-    height: 32px;
+
+// #menu-toggle a
+// {
+//   text-decoration: none;
+//   color: #ffffff;
+//   font-family: 'Exo 2', sans-serif;
+//   transition: color 0.3s ease;
+// }
+
+
+// #menu-toggle input
+// {
+//     display: block;
+//     width: 40px;
+//     height: 32px;
+//     position: absolute;
+//     top: -7px;
+//     left: 15px;
+
+//     cursor: pointer;
+
+//     opacity: 0; 
+//     z-index: 3; 
+
+//     -webkit-touch-callout: none;
+// }
+
+// #menu-toggle span
+// {
+//     display: block;
+//     width: 33px;
+//     height: 4px;
+//     margin-bottom: 5px;
+//     margin-left: 20px;
+//     position: relative;
+    
+//     background: #ff2193;
+//     border-radius: 3px;
+    
+//     z-index: 1;
+    
+//     transform-origin: 4px 0px;
+    
+//     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+//         background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+//         opacity 0.55s ease;
+// }
+
+// #menu-toggle span:first-child
+// {
+//   transform-origin: 0% 0%;
+// }
+
+// #menu-toggle span:nth-last-child(2)
+// {
+//   transform-origin: 0% 100%;
+// }
+
+
+// #menu-toggle input:checked ~ span
+// {
+//   opacity: 1;
+//   transform: rotate(45deg) translate(-2px, -1px);
+//   background: #ffffff;
+// }
+
+// #menu-toggle input:checked ~ span:nth-last-child(3)
+// {
+//   opacity: 0;
+//   transform: rotate(0deg) scale(0.2, 0.2);
+// }
+
+
+// #menu-toggle input:checked ~ span:nth-last-child(2)
+// {
+//   transform: rotate(-45deg) translate(0, -1px);
+// }
+.hamburger i {
     position: absolute;
-    top: -7px;
-    left: 15px;
-
-    cursor: pointer;
-
-    opacity: 0; 
-    z-index: 3; 
-
-    -webkit-touch-callout: none;
-}
-
-#menu-toggle span
-{
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    position: relative;
-    
-    background: #ff2193;
-    border-radius: 3px;
-    
-    z-index: 1;
-    
-    transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.55s ease;
-}
-
-#menu-toggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menu-toggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-
-#menu-toggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
-}
-
-#menu-toggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-
-#menu-toggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
+    top: 35px;
+    left: 40px;
+    font-size: 2.5rem;
+    visibility: hidden;
+    color:#fcfcfc
 }
 
 #menu
 {
     position: absolute;
     width: 100vw;
-    margin: -100px 0 0 -50px;
-
-    background: #ff2194d3;
+    // margin: -100px 0 0 -50px;
+    margin: 0;
+    background: #1a0218;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    // transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     display: flex;
+    
 
 }
 
@@ -114,22 +123,24 @@
   font-size: 22px;
   transition: all 0.3s ease-in;
 }
-#menu-toggle li:hover{
+#menu li:hover{
   color: rgb(255, 255, 255);
   animation: neon 0.5s ease-in-out infinite alternate;
 }
 
 
 
-#menu-toggle input:checked ~ ul
-{
-  transform: none;
-}
+// #menu-toggle input:checked ~ ul
+// {
+//   transform: none;
+// }
 
 .top-nav{
-    padding-top:20px;
+    // padding-top:20px;
     position: fixed;
     z-index: 333;
+    width: 100%;
+    // border:2px solid red;
 }
 
 #menu a{
@@ -143,7 +154,12 @@
   #menu  a{
     margin: 0 15px;
   }
+  .hamburger i {
+        visibility: visible;
+        z-index:999;
+    }
 }
+
 
 @media(max-width:510px){
   #menu li{
