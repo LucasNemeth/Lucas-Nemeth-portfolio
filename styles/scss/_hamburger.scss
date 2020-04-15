@@ -97,8 +97,9 @@
     left: 40px;
     font-size: 2.5rem;
     visibility: hidden;
-    color:#fcfcfc
+    color:#fcfcfc;
 }
+
 
 #menu
 {
@@ -113,6 +114,8 @@
     // transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     display: flex;
+    transition: all 0.5s ease-in;
+
     
 
 }
@@ -148,15 +151,29 @@
 }
 
 @media(max-width:655px){
-  #menu li{
-    font-size: 1.7rem;
+  #menu{
+    visibility: hidden;
   }
-  #menu  a{
-    margin: 0 15px;
-  }
+
   .hamburger i {
         visibility: visible;
         z-index:999;
+    }
+
+
+    #menu.active{
+      visibility: visible !important;
+      transition: all 1s ease;
+        position: fixed;
+        // background:$secondary-color;
+        // text-align: center;
+        display: block !important;
+        width: 100%;
+        top:0 !important;
+        left:0; 
+        z-index: 333; 
+        padding: 0;
+        text-align: center;
     }
 }
 
