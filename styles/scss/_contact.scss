@@ -27,11 +27,25 @@
         .entry{
             width: 50%;
             white-space: nowrap;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             color: white;
             background: black;
             border:2px solid #ff2194;
+            padding: 5px;
+
         }
+        .entry::-webkit-input-placeholder {
+            font-style: italic;
+            }
+        .entry:-moz-placeholder {
+            font-style: italic;  
+            }
+        .entry::-moz-placeholder {
+            font-style: italic;  
+            }
+        .entry:-ms-input-placeholder {  
+            font-style: italic; 
+            } 
     }
 }
 form input {
@@ -39,10 +53,24 @@ form input {
     height:35px; 
 }
 textarea{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: white;
     background: black;
     border:2px solid #ff2194;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+textarea::-webkit-input-placeholder {
+    font-style: italic;
+}
+textarea:-moz-placeholder {
+    font-style: italic;  
+}
+textarea::-moz-placeholder {
+    font-style: italic;  
+}
+textarea:-ms-input-placeholder {  
+    font-style: italic; 
 }
 
 h3{
@@ -51,6 +79,10 @@ h3{
 
 .social-contain{
     text-align: center;
+    margin: 20px 0px;
+}
+.social-nav{
+    margin: 20px 0px;
 }
 // .social-nav li:first-of-type{
 //     margin-top: 0;
@@ -73,6 +105,7 @@ h3{
     color: #fadfc6;
     p{
         margin: 0;
+        padding:5px 0px;
     }
 }
 

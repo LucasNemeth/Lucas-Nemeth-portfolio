@@ -21,8 +21,12 @@
 
 .built-with{
     display: flex;
-    font-size: 1.2rem;
     padding:0;
+    flex-wrap: wrap;
+    li{
+        font-size: 1.6rem;
+        padding: 10px 5px;
+    }
 }
 
 .port-contain-left,
