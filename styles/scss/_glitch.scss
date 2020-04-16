@@ -50,3 +50,14 @@
   clip:rect(0,900px,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
+
+@media(max-width:680px){
+  .glitch{
+    font-size:6rem;
+  }
+}
+@media(max-width:410px){
+  .glitch{
+    font-size: 5rem;
+  }
+}
