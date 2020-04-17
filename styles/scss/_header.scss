@@ -85,7 +85,11 @@ polygon {
 .hero-text{
     text-align: center;
     margin: 0 auto;
-    padding-top:200px;
+    margin-top:200px;
+    margin-bottom: 10px;
+    background:#0f040b44;
+    padding:10px;
+    border-radius: 25px;
     h3{
         color: #fadfc6;
         font-size: 4rem;
