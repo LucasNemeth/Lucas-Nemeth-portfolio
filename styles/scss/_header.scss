@@ -1,30 +1,65 @@
 header{
     // pointer-events: none;
-    background-image: url(./assets/Optimized-20200316_185428.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url(./assets/Optimized-20200316_185428.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     height: 100vh;
-    background-attachment: fixed;
-}
+    // background-attachment: fixed;
+    background: linear-gradient(138deg, #4e053e, #e3265f, #91226b, #47021f);
+    background-size: 800% 800%;
 
-.dimmed{
-    position: relative;
-
-}
-
-.dimmed:after {
-    content: " ";
-    background: rgba(38, 18, 126, 0.25);
+    -webkit-animation: header 17s ease infinite;
+    -moz-animation: header 17s ease infinite;
+    animation: header 17s ease infinite;
     display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    // z-index: -1;
+  position: relative;
+}
+
+ @-webkit-keyframes header {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+@-moz-keyframes header {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+@keyframes header {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+
+header::after{
+    content: "";
+  background: url(./assets/Optimized-20200316_185428.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+// .dimmed{
+//     position: relative;
+
+// }
+
+// .dimmed:after {
+//     content: " ";
+//     background: rgba(38, 18, 126, 0.25);
+//     display: block;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     // z-index: -1;
     
 
-}
+// }
 
 .heading {
     display: flex;
@@ -87,7 +122,8 @@ polygon {
     margin: 0 auto;
     margin-top:200px;
     margin-bottom: 10px;
-    background:#0f040b44;
+    // background:#0f040b44;
+    border: 3px solid #fadfc6;
     padding:10px;
     border-radius: 25px;
     h3{

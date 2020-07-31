@@ -5,7 +5,7 @@
     left: 40px;
     font-size: 2.5rem;
     visibility: hidden;
-    color:#F8188F;
+    color:#fadfc6;
     font-size: 3rem;
 }
 .hamburger i:hover,
@@ -24,7 +24,13 @@
     width: 100vw;
     // margin: -100px 0 0 -50px;
     margin: 0;
-    background: linear-gradient(to top, #460546e7, #09000e);
+    // background: linear-gradient(to top, #460546e7, #09000e);
+    background: linear-gradient(138deg, #4e053e, #e3265f, #91226b, #47021f);
+    background-size: 800% 800%;
+
+    -webkit-animation: menuAni 17s ease infinite;
+    -moz-animation: menuAni 17s ease infinite;
+    animation: menuAni 17s ease infinite;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -37,6 +43,21 @@
 
     
 
+}
+@-webkit-keyframes menuAni {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+@-moz-keyframes menuAni {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
+}
+@keyframes menuAni {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 100%}
+    100%{background-position:19% 0%}
 }
 
 #menu li
