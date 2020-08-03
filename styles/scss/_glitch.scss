@@ -3,11 +3,12 @@
 
 .glitch{
   color:white;
-  font-size:7rem;
+  font-size:13rem;
   position:relative;
   width:100%;
   margin:0 auto;
   z-index: 2;
+  
 }
 @keyframes noise-anim{
   $steps:20;
