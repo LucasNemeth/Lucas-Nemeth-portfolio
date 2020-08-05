@@ -1,6 +1,6 @@
 header{
     // pointer-events: none;
-    background-image: url(./assets/BG-optimized.jpg);
+    background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)) ,url(./assets/BG-optimized.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -38,7 +38,7 @@ header::after{
 
 .dimmed:after {
     content: " ";
-    background: linear-gradient(138deg, #4e053e, #e3265f, #d607ff, #47021f);
+    // background: linear-gradient(138deg, #4e053e, #e3265f, #d607ff, #47021f);
     display: block;
     height: 170%;
     position: absolute;
@@ -94,8 +94,8 @@ polygon {
     margin: 0;
     text-shadow: 3px 3px 4px #ffffff;
     stroke: 1px #ffb4ef;
-    animation: glow 1s ease-in-out infinite alternate;
-    transition: all .2s ease-out;
+    // animation: glow 1s ease-in-out infinite alternate;
+    // transition: all .2s ease-out;
         
     &.arrow-middle {
         opacity: 0.75;

@@ -27,10 +27,6 @@
     // background: linear-gradient(to top, #460546e7, #09000e);
     background: linear-gradient(138deg, #4e053e, #e3265f, #91226b, #47021f);
     background-size: 800% 800%;
-
-    // -webkit-animation: menuAni 17s ease infinite;
-    // -moz-animation: menuAni 17s ease infinite;
-    // animation: menuAni 17s ease infinite;
     // list-style-type: none;
     // -webkit-font-smoothing: antialiased;
     // transform-origin: 0% 0%;
@@ -44,27 +40,13 @@
     
 
 }
-@-webkit-keyframes menuAni {
-    0%{background-position:19% 0%}
-    50%{background-position:82% 100%}
-    100%{background-position:19% 0%}
-}
-@-moz-keyframes menuAni {
-    0%{background-position:19% 0%}
-    50%{background-position:82% 100%}
-    100%{background-position:19% 0%}
-}
-@keyframes menuAni {
-    0%{background-position:19% 0%}
-    50%{background-position:82% 100%}
-    100%{background-position:19% 0%}
-}
+
 
 #menu li
 {
   padding: 10px 0;
   font-size: 22px;
-  transition: all 0.3s ease-in;
+//  transition: all 0.3s ease-in; 
 }
 #menu li:hover{
   color: rgb(255, 255, 255);
@@ -90,9 +72,16 @@
     margin: 0 20px;
 }
 
+@media(max-width:670px){
+  #menu.active{
+    transition:none;
+  }
+}
+
 @media(max-width:655px){
   #menu{
     visibility: hidden;
+    transition: none;
   }
 
   .hamburger i {
@@ -103,8 +92,11 @@
 
     #menu.active{
       visibility: visible !important;
-      transition: all 1s ease;
+      animation-name: menufade;
+      animation-timing-function: ease-in-out;
+      animation-duration: 0.5s;
         position: fixed;
+        
         // background:$secondary-color;
         // text-align: center;
         display: block !important;
@@ -116,6 +108,14 @@
         text-align: center;
         
     }
+    @keyframes menufade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 }
 
 
