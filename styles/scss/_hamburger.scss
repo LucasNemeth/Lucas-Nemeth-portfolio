@@ -28,14 +28,14 @@
     background: linear-gradient(138deg, #4e053e, #e3265f, #91226b, #47021f);
     background-size: 800% 800%;
 
-    -webkit-animation: menuAni 17s ease infinite;
-    -moz-animation: menuAni 17s ease infinite;
-    animation: menuAni 17s ease infinite;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    // transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    // -webkit-animation: menuAni 17s ease infinite;
+    // -moz-animation: menuAni 17s ease infinite;
+    // animation: menuAni 17s ease infinite;
+    // list-style-type: none;
+    // -webkit-font-smoothing: antialiased;
+    // transform-origin: 0% 0%;
+    // // transform: translate(-100%, 0);
+    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     display: flex;
     transition: all 0.5s ease-in;
     justify-content: space-evenly;

@@ -48,32 +48,15 @@ header::after{
     mix-blend-mode: overlay;
     // opacity: 50%;
     z-index: 0;
-        -webkit-animation: dimmed 17s ease infinite;
-    -moz-animation: dimmed  17s ease infinite;
-    animation: dimmed 17s ease infinite;
     
 
-}
- @-webkit-keyframes dimmed {
-    0%{background-position:19% 0%}
-    50%{background-position:82% 100%}
-    100%{background-position:19% 0%}
-}
-@-moz-keyframes dimmed {
-    0%{background-position:19% 0%}
-    50%{background-position:82% 100%}
-    100%{background-position:19% 0%}
-}
-@keyframes dimmed {
-    0%{background-position:19% 0%}
-    50%{background-position:82% 100%}
-    100%{background-position:19% 0%}
 }
 .heading {
     display: flex;
     z-index: 5;
     position: relative;
     flex-direction: column;
+    background-blend-mode: overlay;
     .arrow{
 
         // text-align: center;
@@ -135,11 +118,14 @@ polygon {
     padding:10px;
     border-radius: 25px;
     z-index: 3;
+    // background: whitesmoke;
+;
     h3{
-        color: #fadfc6;
+        color: #eeeceb;
         font-size: 4rem;
         // -webkit-text-stroke: 1px #ffffff;
-        // text-shadow:3px 3px 4px  #f19696;
+        text-shadow:1.5px 1.5px 2px  #f01924cb, -1.5px -1.5px 2px rgba(0, 0, 255, 0.637)  ;
+        // text-shadow: -1.5px -1.5px 2px rgba(0, 0, 255, 0.637) ;
         margin-top: 0;
         // -webkit-animation: glow 1s ease-in-out infinite alternate;
         // -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -159,6 +145,12 @@ h1 {
     // -moz-animation: glow 1s ease-in-out infinite alternate;
     // animation: glow 1s ease-in-out infinite alternate;
     
+}
+
+@media(max-width:900px){
+    h1{
+        font-size: 5rem
+    }
 }
 
 @media(max-width:680px){

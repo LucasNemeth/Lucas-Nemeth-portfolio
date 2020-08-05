@@ -4,7 +4,7 @@
 
 .about-img-contain{
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     img{
         -webkit-animation: imgGlow 1s ease-in-out infinite alternate;
         -moz-animation: imgGlow 1s ease-in-out infinite alternate;
@@ -20,7 +20,7 @@
 
 .about-text-contain{
     width: 60%;
-    padding:20px 20px 0px 0px;
+    padding:50px 70px 0px 0px;
     
     button{
         width:100%;
@@ -47,6 +47,7 @@
         h2 {
 
             margin:0;
+            padding-top:40px;
         }
         p{
             z-index: 2;
