@@ -1,19 +1,12 @@
 header{
     // pointer-events: none;
-    background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)) ,url(./assets/BG-optimized.jpg);
+    background:linear-gradient(0deg, #ff0096, #49042c) ,url(./assets/BG-optimized.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
-    // background: linear-gradient(138deg, #4e053e, #e3265f, #91226b, #47021f);
-    // background-size: contain;
-
-    // -webkit-animation: header 17s ease infinite;
-    // -moz-animation: header 17s ease infinite;
-    // animation: header 17s ease infinite;
-    // display: block;
-  position: relative;
-  background-blend-mode: screen;
+    position: relative;
+    background-blend-mode: overlay;
 }
 
 
@@ -45,7 +38,7 @@ header::after{
     top: 0;
     right: 0;
     left: 0;
-    mix-blend-mode: color-burn;
+    background-blend-mode: color-burn;
     // opacity: 50%;
     z-index: 0;
     
